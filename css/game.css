@@ -25,10 +25,10 @@ body{
     width: 100%;
 }
 .correct{
-    background: linear-gradient(32deg,rgb(11,233,36)0%,rgb(41,232,111)100%);
+    background: linear-gradient(32deg,rgb(11,233,36) 0%,rgb(41,232,111) 100%);
 }
 .incorrect{
-    background: linear-gradient(32deg,rgb(230,29,36)0%,rgb(224,11,1)100%);
+    background: linear-gradient(32deg,rgb(230,29,36) 0%,rgb(224,11,1) 100%);
 }
 #hud{
     display: flex;

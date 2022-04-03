@@ -1,6 +1,13 @@
 :root{
-  background-color: rgb(29,24,20);
+  --hue: 180;
+  --first-color: hsl(var(--hue), 24%, 32%);
+  --first-color-light: hsl(var(--hue), 24%, 66%);
+  --btn-color-lighten: hsl(0, 100%, 62%);
+  --title-color: hsl(240, 50%, 100%);
+    
+  background-image: linear-gradient(5deg, #d1c264 0, #d5ba5a 10%, #d8b050 20%, #daa647 30%, #dc9b3e 40%, #de8e36 50%, #df8130 60%, #e1742e 70%, #e2662f 80%, #e35832 90%, #e44a37 100%);
 }
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -10,11 +17,12 @@
 }
 h1{
   font-size: 5.4rem;
-  color: #fff;
+  color: var(--title-color);
   margin-bottom: 5rem;
 }
 h2{
   font-size: 4.2rem;
+  color: var(--first-color);
   margin-bottom: 4rem;
 }
 .container{
@@ -23,9 +31,8 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 5rem;
 }
 .flex-column{
   display: flex;
@@ -57,7 +64,7 @@ h2{
 }
 .btn:hover{
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgb(8,114,244,0.6);
+  box-shadow: 0 0.4rem 1.4rem 0 var(--btn-color-lighten);
   transition: transform 150ms;
   transform: scale(1.03);
 }

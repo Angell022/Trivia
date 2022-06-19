@@ -8,10 +8,10 @@
 input{
     margin-bottom: 1rem;
     width: 20rem;
-    padding: 1.5rem;
-    font-size: 1.8rem;
+    padding: 1rem;
+    font-size: 1.5rem;
     border: none;
-    box-shadow: 0 0.1rem 1.4rem 0 rgb(86,185,235,0.5);
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 235, 153, 0.5);
 }
 input::placeholder{
     color:#aaa;
@@ -22,15 +22,10 @@ input::placeholder{
     outline: none;
 }
 #end-text{
-    font-size: 2.4rem;
+    font-size: 2rem;
     color:#fff;
     text-align: center;
 }
 #saveScoreBtn{
     border: none;
-}
-.fa-home{
-    margin-left: 1rem;
-    font-size: 2rem;
-    color: rgb(28,22,22);
 }

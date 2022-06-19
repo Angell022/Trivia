@@ -12,41 +12,51 @@ let availableQuestion = []
 
 let questions = [
   {
-    question:'Cuanto es 2+2',
-    choice1: '2',
-    choice2: '4',
-    choice3: '22',
-    choice4: '17',
+    question:'Qué significa la «a» en RGBa',
+    choice1: "Appearance",
+    choice2: "Alpha",
+    choice3: "Animation",
     answer: 2,
   },
   {
-    question:'Cual es la ciudad mas grande del mundo',
-    choice1: "Dubai",
-    choice2: "New York",
-    choice3: "Shanghai",
-    choice4: "None of the above",
-    answer: 1,
-  },
-  {
-    question:'Porcentaje de adultos que consumen cereal',
-    choice1: "20%",
-    choice2: "18%",
-    choice3: "7%",
-    choice4: "33%",
+    question:'Forma correcta de declarar una media query en un archivo CSS',
+    choice1: "@media-query only screen and (max-width: 480px)",
+    choice2: "@media-screen (max-width: 480px)",
+    choice3: "@media only screen and (max-width: 480px)",
     answer: 3,
   },
   {
-    question:'Que porcentaje de..',
-    choice1: "10-20%",
-    choice2: "5-10%",
-    choice3: "15-20%",
-    choice4: "30-50%",
+    question:'Forma correcta para generar un efecto de transición',
+    choice1: "transition: height .8s;",
+    choice2: "transition-height: .8s;",
+    choice3: "transform: transition(height, .8s)",
     answer: 1,
+  },
+  {
+    question:'¿Para que se utiliza la regla @keyframes?',
+    choice1: "Transición",
+    choice2: "Rotación",
+    choice3: "Animación",
+    answer: 3,
+  },
+  {
+    question:'La propiedad resize sirve para:',
+    choice1: "Hace que el elemento cambie su tamaño al valor indicado.",
+    choice2: "Hace que un elemento pueda ser modificable en su tamaño por el usuario.",
+    choice3: "No existe dicha propiedad.",
+    answer: 2,
+  },
+  {
+    question:'Si queremos que un elemento no tenga bordes redondeados (setearlo a su valor por defecto), usamos:',
+    choice1: "border-radius: null;",
+    choice2: "border-radius: none;",
+    choice3: "border-radius: 0;",
+    answer: 3,
   }
 ]
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
+const MAX_QUESTIONS = 6
 
 startGame = () => {
   questionCounter = 0

@@ -1,3 +1,8 @@
+:root{
+    --choice-container-size: 2rem;
+    --btn-font-size: 1.5rem;
+    --h2-font-size: 1.15rem;
+  }
 body{
     color: #fff;
 }
@@ -7,23 +12,23 @@ body{
     width: 90%;
     border-radius: 8px;
     background: rgb(18,93,255);
-    font-size: 3rem;
+    font-size: var(--choice-container-size);
     text-align: center;
     min-width: 80rem;
 }
 .choice-container:hover{
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(6,103,247,0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(80, 19, 247, 0.5);
     transform: scale(1.02);
     transform: transform 100ms;
 }
 .choice-prefix{
-    padding: 2rem 2.5rem;
+    padding: 1rem 2rem;
     color: white;
 }
 .choice-text{
-    padding: 2rem;
-    width: 100%;
+    padding: 1rem;
+    width: 90%;
 }
 .correct{
     background: linear-gradient(32deg,rgb(11,233,36) 0%,rgb(41,232,111) 100%);

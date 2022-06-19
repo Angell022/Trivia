@@ -4,24 +4,29 @@
   --first-color-light: hsl(var(--hue), 24%, 66%);
   --btn-color-lighten: hsl(0, 100%, 62%);
   --title-color: hsl(240, 50%, 100%);
+
+  --big-font-size: 2.5rem;
+  --btn-font-size: 1.5rem;
+  --h2-font-size: 1.15rem;
     
-  background-image: linear-gradient(5deg, #d1c264 0, #d5ba5a 10%, #d8b050 20%, #daa647 30%, #dc9b3e 40%, #de8e36 50%, #df8130 60%, #e1742e 70%, #e2662f 80%, #e35832 90%, #e44a37 100%);
+  background-image: url("../img/polygon-scatter-haikei.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 60.5%;
   font-family: 'Courier New', Courier, monospace;
 }
 h1{
-  font-size: 5.4rem;
+  font-size: var(--big-font-size);
   color: var(--title-color);
   margin-bottom: 5rem;
 }
 h2{
-  font-size: 4.2rem;
+  font-size: var(--h2-font-size);
   color: var(--first-color);
   margin-bottom: 4rem;
 }
@@ -32,7 +37,6 @@ h2{
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 5rem;
 }
 .flex-column{
   display: flex;
@@ -52,15 +56,15 @@ h2{
   display: none;
 }
 .btn{
-  font-size: 2.4rem;
-  padding: 2rem 0;
-  width: 30rem;
+  font-size: var(--btn-font-size);
+  padding: 1rem 0;
+  width: 15rem;
   text-align: center;
   margin-bottom: 1rem;
   text-decoration: none;
   color: rgb(28, 26,26);
   background: linear-gradient(90deg,rgb(18,92,255) 0%,rgb(0,102,255) 100%);
-  border-radius: 4px;
+  border-radius: 8px;
 }
 .btn:hover{
   cursor: pointer;
